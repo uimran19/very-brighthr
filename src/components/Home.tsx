@@ -3,12 +3,14 @@ import 'tailwindcss'
 function Home() {
 
     return (
-        <section>
+        <section id='hero' className='flex items-center min-h-screen'>
             <div className='flex items-center'>
                 <img src="/very-brighthr-logo.png" alt="very brighthr logo" className='-mr-12'/>
-                <h1 className='mr-12 font-semibold'>Welcome to Very Bright<sup>hr</sup></h1>
+                <div className='pr-[4rem]'>
+                    <h1 className='font-semibold text-right'>Welcome to Very Bright<sup>hr</sup></h1>
+                    <p className='text-right relative right-[50px]'>Your ultimate tool for everything HR.</p>
+                </div>
             </div>
-            <p>Your ultimate tool for everything HR.</p>
         </section>
     )
 }
